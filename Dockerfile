@@ -39,10 +39,6 @@ ENV USER devuser
 WORKDIR /home/devuser/ros2_ws
 
 
-RUN echo "ros2 launch webots_ros2_universal_robot multirobot_launch.py" >> /home/devuser/.bash_history \
-    && echo "colcon build" >> /home/devuser/.bash_history \
-    && echo "source install/setup.bash" >> /home/devuser/.bash_history \
-    && echo "ros2 launch my_package robot_launch.py" >> /home/devuser/.bash_history \ 
-
+RUN echo "ros2 launch webots_ros2_universal_robot multirobot_launch.py" >> /home/devuser/.bash_history 
 
 RUN echo "alias ros2-source=\"/home/devuser/ros2_ws/install/setup.sh\"" >> /home/devuser/.bashrc
