@@ -1,0 +1,1 @@
+docker run -it --net=host --privileged --env="DISPLAY=$DISPLAY" --volume="${XAUTHORITY}:/home/devuser/.Xauthority" -v ./ros2_ws_src:/home/devuser/ros2_ws/src webots
